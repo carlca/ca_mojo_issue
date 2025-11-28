@@ -1,0 +1,10 @@
+# pixi environments
+.pixi
+*.egg-info
+pixi.lock
+
+
+# editor
+.idea/
+.vscode/
+.zed/
