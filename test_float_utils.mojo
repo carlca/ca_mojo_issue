@@ -12,12 +12,6 @@ fn test_str_to_float_to_rounded_string() raises -> Tuple[Bool, String]:
    var assert3 = fu.format_float(pi, 7) == "3.1415926"
    return assert1 and assert2 and assert3, String(__source_location())
 
-@always_inline
-fn get_func_name(cl: _SourceLocation) -> String:
-   print(cl.file_name)
-   print(cl.line)
-   return cl.file_name   
-
 fn main() raises:
    TeeTest(
       test_str_to_float_to_rounded_string,
